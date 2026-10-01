@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="SIB official stream hub: Kick schedule, clips, projects, mods and socials.">
+<meta name="theme-color" content="#050203">
+<link rel="icon" href="img/logo.jpg">
+<title>SIBTC</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Cairo:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<noscript><style>.rv{clip-path:none}#boot{display:none}</style></noscript>
+<canvas id="bg"></canvas>
+<div class="scan"></div>
+
+<div id="boot"><div><img class="lg" src="img/logo.jpg" width="120" height="120" alt="SIB logo loading" style="margin-bottom:22px"><div class="px">Booting SIB.exe</div><div class="bar"><i id="bi"></i></div><div class="px" style="font-size:8px;color:var(--g)" id="bt">Loading sprites</div></div></div>
+
+<nav><div class="wrap">
+<a class="brand" href="#hero"><img class="lg" src="img/logo.jpg" width="44" height="44" alt="SIB logo"><span>SIBTC</span></a>
+<div class="links"><a class="l" href="#stream">Stream</a><a class="l" href="#projects">Projects</a><a class="l" href="#clips">Clips</a><a class="l" href="#tweets">Tweets</a><a class="l" href="#mods">Mods</a><a class="l" href="#services">Services</a><a class="l" href="#social">Social</a></div>
+<button class="btn alt lbtn" id="lang" type="button" aria-label="Language">عربي</button>
+</div></nav>
+
+<main>
+<section id="hero"><div class="wrap hgrid">
+<div>
+<div class="tag box"><span class="dot live"></span>Status: signal detected</div>
+<h1><span class="gl" data-t="Enter the red zone.">SIBTC</span></h1>
+<p class="lead">Live games, clean clutch plays and late-night runs. Pick a start button.</p>
+<div class="btns"><a class="btn" href="#stream"><span class="cur">Watch live</span></a><a class="btn alt" href="#join">Join party</a></div>
+</div>
+<div class="box logo-stage" style="--c:var(--r)"><div><img id="logo" class="lg" src="img/logo.jpg" alt="SIB logo"></div></div>
+</div></section>
+
+<div class="sep"></div>
+
+<section id="stream"><div class="wrap">
+<h2 class="rv">Live on Kick</h2>
+<div class="box tv rv"><div class="screen"><canvas id="tvc" width="96" height="54"></canvas>
+<div class="ov"><div class="px" id="tvt">Stream offline</div><a class="btn" id="kick1" href="#" target="_blank" rel="noopener">Watch on Kick</a></div></div>
+<div class="tvbar"><span><span class="dot" id="tvd"></span> <span id="tvs">CHANNEL: OFFLINE</span></span><span>KICK.COM/SIBTC</span></div></div>
+<h2 class="rv">Stream schedule</h2>
+<div class="g2">
+<div class="box rv" style="padding:8px 0"><div class="row"><b>MON</b><span>SOON</span><span class="chip">FPS</span></div>
+<div class="row"><b>WED</b><span>SOON</span><span class="chip">PARTY</span></div>
+<div class="row"><b>FRI</b><span>SOON</span><span class="chip">RUN</span></div>
+<div class="row"><b>SUN</b><span>SOON</span><span class="chip">RETRO</span></div></div>
+<div class="box card rv"><svg class="ic" data-i="play"></svg><h3>Next stream</h3><p>SOON</p><div style="margin-top:22px"><a class="btn" href="#join">Get alerts</a></div></div>
+</div></div></section>
+
+<section id="social"><div class="wrap"><h2 class="rv">Find SIB</h2><div class="g3" id="socs"></div></div></section>
+<div class="sep"></div>
+
+<section id="projects"><div class="wrap">
+<h2 class="rv">Projects</h2>
+<div class="g3" id="projs"></div>
+</div></section>
+
+<section id="clips">
+      <div class="wrap">
+    <h2 class="rv">Top clips</h2>
+<div class="g3">
+    <article class="box clip rv"><canvas data-s="1" width="64" height="36"></canvas><div class="in2"><h3>SOON</h3><p>SOON</p><div class="meta"><span>00:00</span><span>SOON</span></div></div></article>
+    <article class="box clip rv"><canvas data-s="2" width="64" height="36"></canvas><div class="in2"><h3>SOON</h3><p>SOON</p><div class="meta"><span>00:00</span><span>SOON</span></div></div></article>
+    <article class="box clip rv"><canvas data-s="3" width="64" height="36"></canvas><div class="in2"><h3>SOON</h3><p>SOON</p><div class="meta"><span>00:00</span><span>SOON</span></div></div></article>
+</div>
+      </div>
+            </section>
+
+<section id="tweets"><div class="wrap"><h2 class="rv">Latest tweets</h2><div class="g3"><div class="box tw rv"><div class="h"><canvas data-a="1" width="8" height="8"></canvas><div><b>SIBTC</b><span>@JustSIBTC</span></div></div><p>SOON</p><div class="m"><span>♥ 0</span><span>↺ 0</span></div></div><div class="box tw rv"><div class="h"><canvas data-a="2" width="8" height="8"></canvas><div><b>SIBTC</b><span>@JustSIBTC</span></div></div><p>SOON</p><div class="m"><span>♥ 0</span><span>↺ 0</span></div></div><div class="box tw rv"><div class="h"><canvas data-a="7" width="8" height="8"></canvas><div><b>SIBTC</b><span>@JustSIBTC</span></div></div><p>SOON</p><div class="m"><span>♥ 0</span><span>↺ 0</span></div></div></div>
+<div style="margin-top:44px"><a class="btn alt" data-soc="x" href="#" target="_blank" rel="noopener">Follow on X</a></div>
+</div>
+</section>
+<section id="mods"><div class="wrap"><h2 class="rv">Kick mod squad</h2><div class="g4"><div class="box mod rv"><canvas data-a="11" width="8" height="8"></canvas><h3 style="margin:0">Mod_One</h3><div class="role">HEAD MOD</div></div><div class="box mod rv"><canvas data-a="12" width="8" height="8"></canvas><h3 style="margin:0">Mod_Two</h3><div class="role">MOD</div></div><div class="box mod rv"><canvas data-a="13" width="8" height="8"></canvas><h3 style="margin:0">Mod_Three</h3><div class="role">MOD</div></div><div class="box mod rv"><canvas data-a="14" width="8" height="8"></canvas><h3 style="margin:0">Mod_Four</h3><div class="role">VIP</div></div></div></div></section>
+<section id="about"><div class="wrap g2">
+<div class="rv"><h2>Player stats</h2>
+<div class="box card">
+<div class="lb"><span>AIM</span><span>0</span></div><div class="bar"><i data-w="0"></i></div>
+<div class="lb"><span>CLUTCH</span><span>0</span></div><div class="bar"><i data-w="0"></i></div>
+<div class="lb"><span>CHAT ENERGY</span><span>0</span></div><div class="bar"><i data-w="0"></i></div>
+<div class="lb"><span>SLEEP</span><span>0</span></div><div class="bar" style="margin-bottom:0"><i data-w="0"></i></div>
+</div></div>
+<div class="rv"><h2>Loadout</h2>
+<div class="box card"><svg class="ic" data-i="star"></svg><p>SOON</p>
+<div class="stats"><div class="stat"><b>--K</b>followers</div><div class="stat"><b>--</b>streams</div><div class="stat"><b>--H</b>hours live</div><div class="stat"><b>--</b>clips</div></div></div></div>
+</div></section>
+
+<div class="sep"></div>
+<section id="services"><div class="wrap"><h2 class="rv">Web services</h2><div class="g2" id="pgs"></div></div></section>
+<div class="sep"></div>
+
+<section id="join"><div class="wrap">
+<div class="box card rv" style="max-width:720px;margin:0 auto;--c:var(--r)">
+<svg class="ic" data-i="heart"></svg><h2 style="margin-bottom:12px">Join the party</h2>
+<p>Drop your email to get a ping when SIB goes live.</p>
+<div class="form"><input id="em" type="email" placeholder="player@email.com" aria-label="Email"><button class="btn" id="go">Press start</button></div>
+<p id="msg" class="px" style="font-size:9px;margin-top:22px;color:var(--rl);min-height:14px"></p>
+</div></div></section>
+</main>
+
+<footer><div class="wrap"><span>© SIBTC</span><span><span class="dot live" style="width:8px;height:8px"></span> SERVER ONLINE</span></div></footer>
+
+<script src="data.js"></script>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+<script src="sound.js"></script>
+<script src="extras.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghed — قيد الإنشاء</title>
+<meta name="description" content="مساحة رقمية تنتمي إلى عالم أهدأ، أعمق، وأكثر غموضًا.">
+<meta name="theme-color" content="#02050b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gh.css">
+<noscript><style>.is-loading .halo,.is-loading .reflection,.is-loading .copy,.is-loading .brand{opacity:1!important}</style></noscript>
+</head>
+<body class="is-loading">
+
+<svg width="0" height="0" aria-hidden="true" focusable="false">
+  <filter id="ripple" x="-5%" y="0" width="110%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.002 0.04" numOctaves="2" result="noise">
+      <animate attributeName="baseFrequency" dur="40s" values="0.002 0.04;0.003 0.055;0.002 0.04" repeatCount="indefinite"/>
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="26"/>
+  </filter>
+</svg>
+
+<header class="brand">SIBTC</header>
+
+<main>
+  <section class="scene" id="scene">
+    <div class="sky-glow"></div>
+
+    <div class="halo">
+      <img class="mark" src="assets/GH.webp" alt="شعار GH" width="350" height="350">
+    </div>
+
+    <div class="sea">
+      <canvas id="sea" aria-hidden="true"></canvas>
+    </div>
+    <div class="reflection" aria-hidden="true">
+      <img src="assets/GH.webp" alt="">
+    </div>
+
+    <div class="fog fog-far"></div>
+    <div class="fog fog-near"></div>
+
+    <div class="copy">
+      <h1>قيد الإنشاء</h1>
+      <p class="en" dir="ltr">Under Construction</p>
+      <p class="tagline">مساحة رقمية تنتمي إلى عالم أهدأ، أعمق، وأكثر غموضًا.</p>
+    </div>
+  </section>
+</main>
+
+<script src="gh.js"></script>
+</body>
+</html>

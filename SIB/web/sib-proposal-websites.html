@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عرض SIB | تصميم وبرمجة المواقع</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Press+Start+2P&display=swap">
+<link rel="icon" href="img/logo.jpg">
+<style>
+:root{--bg:#0a0a0a;--card:#141414;--line:#2a2a2a;--red:#dc2626;--tx:#f5f5f5;--mu:#a3a3a3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box;margin:0}
+body{height:100%;background:var(--bg);color:var(--tx);font-family:'IBM Plex Sans Arabic',Tahoma,sans-serif;overflow:hidden;
+background-image:radial-gradient(#1c1c1c 1px,transparent 1px);background-size:20px 20px}
+.px{font-family:'Press Start 2P','Courier New',monospace;letter-spacing:0;direction:ltr;display:inline-block}
+.deck{height:100%;position:relative}
+.s{position:absolute;inset:0;padding:clamp(20px,5vw,64px) clamp(18px,6vw,90px) 84px;display:none;flex-direction:column;justify-content:center;gap:22px;overflow-y:auto}
+.s.on{display:flex;animation:in .35s ease}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.tag{color:var(--red);font-size:clamp(9px,1.6vw,12px)}
+h1{font-size:clamp(28px,6vw,60px);line-height:1.25;font-weight:700}
+h2{font-size:clamp(22px,4vw,40px);line-height:1.3;font-weight:700}
+h1 em,h2 em{color:var(--red);font-style:normal}
+p.lead{color:var(--mu);font-size:clamp(14px,2vw,19px);line-height:1.9;max-width:760px}
+.cur{display:inline-block;width:.45em;height:.9em;background:var(--red);vertical-align:-.08em;animation:b 1s steps(2) infinite}
+@keyframes b{50%{opacity:0}}
+.g{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.c{background:var(--card);border:1px solid var(--line);border-right:3px solid var(--red);padding:16px 18px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+.c b{display:block;font-size:clamp(15px,2vw,18px);margin-bottom:6px}
+.c span{color:var(--mu);font-size:clamp(13px,1.7vw,15px);line-height:1.8}
+.n{color:var(--red);font-size:10px;display:block;margin-bottom:8px}
+.pk.hot{border-color:var(--red);box-shadow:0 0 0 1px var(--red),0 0 28px #dc262633}
+.pk ul{list-style:none;padding:0;margin:10px 0;display:grid;gap:7px;color:var(--mu);font-size:14px}
+.pk li::before{content:"■ ";color:var(--red);font-size:10px}
+.price{font-size:clamp(20px,3vw,30px);font-weight:700;color:var(--tx)}
+.note{border:1px dashed var(--red);padding:12px 16px;color:var(--mu);font-size:clamp(13px,1.7vw,15px);line-height:1.9}
+.nav{position:fixed;bottom:0;inset-inline:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px clamp(18px,6vw,90px) calc(12px + env(safe-area-inset-bottom,0px));background:linear-gradient(transparent,var(--bg) 40%)}
+.nav button{background:var(--red);color:#fff;border:0;padding:10px 18px;font:inherit;font-weight:700;cursor:pointer;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
+.nav button:disabled{background:var(--line);color:var(--mu);cursor:default}
+.dots{display:flex;gap:6px}.dots i{width:10px;height:10px;background:var(--line)}.dots i.on{background:var(--red)}
+</style>
+</head>
+<body>
+<div class="deck">
+
+<section class="s on">
+  <span class="px tag">SIB // WEB_PROPOSAL_2026</span>
+  <h1>موقعك يشتغل لك<br>وأنت <em>نايم</em><span class="cur"></span></h1>
+  <p class="lead">هلا ، أنا SIBTC مبرمج وصاحب SIB. أصمم وأبرمج مواقع لمشروعك من الفكرة للإطلاق: متجر، موقع شركة، صفحة هبوط، أو نظام خاص. كل شيء مكتوب بيدي، وأتحمل مسؤوليته من أول يوم.</p>
+  <div class="g">
+    <div class="c"><b>متكلم برمجة مو متكلم مبيعات</b><span>تتعامل معي مباشرة بدون وسطاء، ونفس الشخص اللي يكتب الكود يسمع ملاحظاتك.</span></div>
+    <div class="c"><b>مبني حول هدف مشروعك</b><span>مبيعات أو حجوزات أو ثقة، كل قرار في التصميم يخدم هذا الهدف.</span></div>
+    <div class="c"><b>تسليم واضح وموعد ثابت</b><span>خطوات معروفة من البداية، وما فيه مفاجآت في الكلفة أو الوقت.</span></div>
+  </div>
+</section>
+
+<section class="s">
+  <span class="px tag">02 / WHAT_I_BUILD</span>
+  <h2>وش نوع الموقع <em>اللي تحتاجه؟</em></h2>
+  <div class="g">
+    <div class="c"><span class="px n">01</span><b>موقع تعريفي لشركة</b><span>يعرّف بخدماتك وفريقك ويخلي العميل يتواصل معك بسهولة.</span></div>
+    <div class="c"><span class="px n">02</span><b>متجر إلكتروني</b><span>عرض منتجات وسلة ودفع آمن وإدارة للطلبات.</span></div>
+    <div class="c"><span class="px n">03</span><b>صفحة هبوط</b><span>صفحة وحدة مركزة لحملة أو منتج، هدفها تحويل الزائر لعميل.</span></div>
+    <div class="c"><span class="px n">04</span><b>موقع حجوزات ومواعيد</b><span>للعيادات والصالونات والمدربين، يحجز العميل بدون اتصال.</span></div>
+    <div class="c"><span class="px n">05</span><b>بورتفوليو ومعارض</b><span>للمصممين والمصورين وأصحاب المهن الحرة.</span></div>
+    <div class="c"><span class="px n">06</span><b>نظام أو لوحة تحكم</b><span>أدوات مخصصة لعملك، وتُحدد بعد جلسة فهم المتطلبات.</span></div>
+  </div>
+</section>
+
+<section class="s">
+  <span class="px tag">03 / INCLUDED</span>
+  <h2>وش <em>يدخل</em> في أي موقع أسلمه؟</h2>
+  <div class="g">
+    <div class="c"><b>تصميم مخصص</b><span>بهويتك وألوانك، مو قالب يشبه مواقع غيرك.</span></div>
+    <div class="c"><b>لوحة تحكم بسيطة</b><span>تعدل النصوص والصور بنفسك بدون ما ترجع لي في كل صغيرة.</span></div>
+    <div class="c"><b>نموذج تواصل وربط واتساب</b><span>الزائر يوصلك بضغطة وحدة.</span></div>
+    <div class="c"><b>ربط الدومين والاستضافة</b><span>أجهز لك كل شيء وأرفع الموقع حتى يصير أونلاين.</span></div>
+    <div class="c"><b>شرح التسليم</b><span>جلسة قصيرة تشرح فيها كيف تستخدم موقعك وتديره.</span></div>
+  </div>
+</section>
+
+<section class="s">
+  <span class="px tag">04 / UNDER_THE_HOOD</span>
+  <h2>التقنية اللي <em>ما تبان</em> بس تفرق</h2>
+  <div class="g">
+    <div class="c"><b>سرعة عالية</b><span>الموقع البطيء يخسّرك عملاء، فأركز على الأداء من أول سطر.</span></div>
+    <div class="c"><b>تجاوب مع كل الشاشات</b><span>يظهر مرتب على الجوال والتابلت والكمبيوتر، ونختبره قبل التسليم.</span></div>
+    <div class="c"><b>تحسين محركات البحث</b><span>بنية سليمة وعناوين ووصف وخريطة موقع عشان تظهر في قوقل.</span></div>
+    <div class="c"><b>أمان وحماية</b><span>HTTPS وحماية النماذج والبيانات، وتحديث المكتبات.</span></div>
+  </div>
+</section>
+
+<section class="s">
+  <span class="px tag">05 / ROADMAP</span>
+  <h2>خطتنا، <em>خطوة بخطوة</em></h2>
+  <div class="g">
+    <div class="c"><span class="px n">STEP 1</span><b>الفهم</b><span>جلسة نحدد فيها هدفك وجمهورك ونطاق الموقع.</span></div>
+    <div class="c"><span class="px n">STEP 2</span><b>التصميم</b><span>أعرض عليك التصميم قبل أي برمجة، وتعتمده أو تعدل عليه.</span></div>
+    <div class="c"><span class="px n">STEP 3</span><b>البرمجة</b><span>أبني الموقع وأشاركك رابط تجريبي تتابع منه التقدم.</span></div>
+    <div class="c"><span class="px n">STEP 4</span><b>الاختبار</b><span>مراجعة شاملة للسرعة والجوال والنماذج، ثم تعديلاتك.</span></div>
+    <div class="c"><span class="px n">STEP 5</span><b>الإطلاق</b><span>الرفع وربط الدومين وتسليم كل شيء لك.</span></div>
+  </div>
+</section>
+
+<section class="s">
+  <span class="px tag">06 / PRICING</span>
+  <h2>باقات <em>على قد</em> احتياجك</h2>
+  <div class="g">
+    <div class="c pk"><b>أساسية</b><div class="price">[XXXX] ر.س</div>
+      <ul><li>حتى 5 صفحات</li><li>تصميم مخصص ومتجاوب</li><li>نموذج تواصل وSEO أساسي</li><li>جولتين تعديل</li><li>مدة التنفيذ: [X] أيام</li></ul></div>
+    <div class="c pk hot"><b>متقدمة <span class="px tag">★ TOP</span></b><div class="price">[XXXX] ر.س</div>
+      <ul><li>حتى 10 صفحات</li><li>لوحة تحكم لتعديل المحتوى</li><li>لغتين، حجوزات أو مدونة</li><li>SEO متقدم وتحليلات</li><li>3 جولات تعديل ودعم 30 يوم</li><li>مدة التنفيذ: [X] أيام</li></ul></div>
+    <div class="c pk"><b>مخصصة</b><div class="price">حسب الطلب</div>
+      <ul><li>متاجر وأنظمة ولوحات تحكم</li><li>ربط دفع وخدمات خارجية</li><li>تُسعّر بعد جلسة المتطلبات</li></ul></div>
+  </div>
+  <p class="note">وش تدفع فيه؟ وقت وخبرة في التصميم والبرمجة والاختبار، وموقع سريع وآمن يخدمك سنين. السعر يعكس حجم الشغل وقيمته لمشروعك، وأي إضافة خارج النطاق أحددها لك بوضوح قبل ما أبدأ فيها.</p>
+</section>
+
+<section class="s">
+  <span class="px tag">07 / TERMS</span>
+  <h2>شروط <em>واضحة</em> تحمي الطرفين</h2>
+  <div class="g">
+    <div class="c"><b>العربون 50%</b><span>يُدفع قبل البدء لتأكيد الجدية، والباقي عند التسليم وقبل نقل الملفات.</span></div>
+    <div class="c"><b>التعديلات</b><span>عدد الجولات حسب الباقة. التعديل بعد اعتماد التصميم أو إضافة ميزات جديدة تُسعّر منفصلة.</span></div>
+    <div class="c"><b>المحتوى</b><span>النصوص والصور والشعار عليك، وتأخيرها يمدد موعد التسليم بنفس المدة.</span></div>
+    <div class="c"><b>الدومين والاستضافة</b><span>رسومهما على العميل، وأساعدك في الاختيار والربط.</span></div>
+  </div>
+  <p class="lead" style="font-size:clamp(15px,2.2vw,20px)">جاهز نبدأ؟ كلمني ونحجز جلسة الفهم. <span class="px tag">&gt; hello@sib.dev</span></p>
+</section>
+
+</div>
+<div class="nav" dir="rtl">
+  <button id="nx">التالي ←</button>
+  <div class="dots" id="dt"></div>
+  <button id="pv">→ السابق</button>
+</div>
+<script>
+var S=[].slice.call(document.querySelectorAll('.s')),i=0,d=document.getElementById('dt');
+S.forEach(function(){d.appendChild(document.createElement('i'))});
+function go(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,k){s.classList.toggle('on',k===i);d.children[k].classList.toggle('on',k===i)});
+document.getElementById('pv').disabled=i===0;document.getElementById('nx').disabled=i===S.length-1}
+document.getElementById('nx').onclick=function(){go(i+1)};
+document.getElementById('pv').onclick=function(){go(i-1)};
+document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(i+1);if(e.key==='ArrowRight')go(i-1)});
+go(0);
+</script>
+</body>
+</html>
